@@ -1,24 +1,24 @@
 # cisco-catc-vlan-python
-Catalyst Center Device Interface Query Report:
+**Catalyst Center Device Interface Query Report:**
 
-Use Case: Query DNACenter devices for their assoicated vlans and generate csv report. Sequential execution.
+**Case:** Query DNACenter devices for their assoicated vlans and generate csv report. Sequential execution.
 
-Solution: A sequential query to DNAC over it all it's devices and identify the one with it's associated vlan's and 
+**Solution:** A sequential query to DNAC over it all it's devices and identify the one with it's associated vlan's and 
 generate a csv report.
 
-Result: Successful vlan query of DNA Center Devices in bulk sequentially in 5 seconds for 15 devices. Performance of the
+**Result:** Successful vlan query of DNA Center Devices in bulk sequentially in 5 seconds for 15 devices. Performance of the
 script estimate: If any production enviroment has 2000 devices then it will execute (depending on your internet speed is
 same as 5.53 seconds) in 12.29 minutes estimated. If internet speed is slower it will execute slower than estimated 
 above, if faster it will execute faster. This script scales to generate report.
 
-Example: vlan_run_0.993519977.log 2023-05-19 16:42:22.507 INFO: Print Network Device List 
+**Example:** vlan_run_0.993519977.log 2023-05-19 16:42:22.507 INFO: Print Network Device List 
 {'device_total_count': 15, 'devices': [{'hostname': 'A...2C', 'role': 'ACCESS', 'reachability': 'Reachable', 'family': 
 'Unified AP', 'platform': 'AIR-AP4800-B-K9', 'managementIpAddress': '172.x.x.x', 
 'deviceId': '20e226ef-dfe5-4982-99be-5937b6bfec04'}... {'hostname': 'R...sspod2.com', 'role': 'BORDER ROUTER', 
 'reachability': 'Reachable', 'family': 'Routers', 'platform': 'CSR1000V', 'managementIpAddress': '192.x.x.x', 
 'deviceId': 'e4f45e71-bbf2-4bc8-97aa-1e2c4b7cb0de'}]} 2023-05-19 16:42:26.600 INFO: Completed in: 5.536824585 seconds.
 
-Pre-requisite: 
+**Pre-requisite:** 
 Python 3.8+. If python is not installed, please follow: https://www.python.org/downloads/
 ▪ pip3 or pip installed. If pip3 is not installed, please follow instructions at: 
 https://pip.pypa.io/en/stable/installing/virtualenv installed
@@ -27,12 +27,13 @@ instructions: https://pypi.org/project/virtualenv/
 ▪ git installed ◦if git is not installed, please try referring: https://git-scm.com/downloads
 Operating System: Linux based OS or windows or mac
 
-Setup: 
+**Setup:** 
 ▪python3 -m venv demoenv ▪source demo_env/bin/activate Run the command below with pip or pip3
 ▪pip install --upgrade pip
 ▪pip install -r requirements.txt or run make install on Makefile it will achieve the same.
 
-Installation: git clone https://github.com/CiscoDevNet/cisco-catc-vlan-python.git
+**Installation:**
+Git clone: git clone https://github.com/CiscoDevNet/cisco-catc-vlan-python.git
 Go to your project folder
 cd vlan
 Set up a Python venv First make sure that you have Python 3 installed on your machine. We will then be using venv to create an isolated environment with only the necessary packages.
