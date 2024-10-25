@@ -1,9 +1,9 @@
 # cisco-catc-vlan-python
 **Catalyst Center Device Interface Query Report:**
 
-**Case:** Query DNACenter devices for their assoicated vlans and generate csv report. Sequential execution.
+**Case:** Query Catalyst Center devices for their assoicated vlans and generate csv report. Sequential execution.
 
-**Solution:** A sequential query to DNAC over it all it's devices and identify the one with it's associated vlan's and 
+**Solution:** A sequential query to Catalyst over it all it's devices and identify the one with it's associated vlan's and 
 generate a csv report.
 
 **Result:** Successful vlan query of DNA Center Devices in bulk sequentially in 5 seconds for 15 devices. Performance of the
