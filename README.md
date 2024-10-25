@@ -45,8 +45,8 @@ Activate your venv
 source venv/bin/activate
 Install dependencies: pip install -r requirements.txt or run make install on Makefile it will achieve the same.
 
-Usage: 
-1. Modify dnac_config.py file. 
+**Usage:** 
+Step I. Modify dnac_config.py file. Change the variables below per your environment.
 DNAC_URL_REGION1 = '<<https://catalystcenteripaddress'>> Change this to your lab environment
 DNAC_USER_REGION1 = '<<change this you username plain text>>'
 DNAC_PASS_REGION1 = '<<change this your password plain text for same url region1>>'
@@ -54,15 +54,15 @@ LIMIT = 5    #you can change this 500 to scale up on how many devices it queries
 WAIT_TIME = 60 * 60 #wait time modifiable per your requirements. First try with same.
 DATEFORMAT = '%m-%d-%Y_%H%M%S.%f' 
 REPORT_DIR = '<</absolute path to this vlan folder that holds the code base>>'
-REPORT_NAME = "VlanReport" # can modify name of the report
+REPORT_NAME = "VlanReport" # You can modify name of the report
 
-II. Run - python vlan.py and test if it picks up all vlans and generates a csv file. Validate. 
+Step II. Run - python vlan.py and test, if it picks up all vlans and generates a csv file. Validate. 
 You should see a VlanReport_timestamp.csv file and vlan_run_timestamp.log file gets generated. Check the log file and
 csv file and validate output against your environment.
 
-Recommend: Extensive testing in your lab against all scenarios. Check if it picks up all devices and it's associated. 
+**Recommend:** Extensive testing in your lab against all scenarios. Check if it picks up all devices and it's associated. 
 
-Cisco Sample Code License, Version 1.1
+**Cisco Sample Code License, Version 1.1**
 These terms govern this Cisco Systems, Inc. (“Cisco”), example or demo source code and its associated documentation (together, the “Sample Code”). By downloading, copying, modifying, compiling, or redistributing the Sample Code, you accept and agree to be bound by the following terms and conditions (the “License”). If you are accepting the License on behalf of an entity, you represent that you have the authority to do so (either you or the entity, “you”). Sample Code is not supported by Cisco TAC and is not tested for quality or performance. This is your only license to the Sample Code and all rights not expressly granted are reserved.
 
 1. LICENSE GRANT: Subject to the terms and conditions of this License, Cisco hereby grants to you a perpetual, worldwide, non-exclusive, non-transferable, non-sublicensable, royalty-free license to copy and modify the Sample Code in source code form, and compile and redistribute the Sample Code in binary/object code or other executable forms, in whole or in part, solely for use with Cisco products and services. For interpreted languages like Java and Python, the executable form of the software may include source code and compilation is not required.
