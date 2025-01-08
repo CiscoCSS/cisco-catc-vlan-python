@@ -131,5 +131,5 @@ These terms govern this Cisco Systems, Inc. (“Cisco”), example or demo sourc
 
 7. GENERAL: This License shall be governed by and interpreted in accordance with the laws of the State of California, excluding its conflict of laws provisions. You agree to comply with all applicable United States export laws, rules, and regulations. If any provision of this License is judged illegal, invalid, or otherwise unenforceable, that provision shall be severed and the rest of the License shall remain in full force and effect. No failure by Cisco to enforce any of its rights related to the Sample Code or to a breach of this License in a particular situation will act as a waiver of such rights. In the event of any inconsistencies with any other terms, this License shall take precedence.
 
-Last updated January 26, 2018vlan. Modify code to fit your environment. 
+Last updated January 26, 2023. Modify code to fit your environment. 
 [![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/CiscoCSS/cisco-catc-vlan-python)
